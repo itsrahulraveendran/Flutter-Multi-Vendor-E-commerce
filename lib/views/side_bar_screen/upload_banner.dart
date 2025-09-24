@@ -1,5 +1,6 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:inktee_web/controller/banner_controller.dart';
 
 class UploadScreen extends StatefulWidget {
   static const String id ='\banner-screen';
@@ -10,7 +11,7 @@ class UploadScreen extends StatefulWidget {
 }
 
 class _UploadScreenState extends State<UploadScreen> {
-
+final BannerController _bannerController =  BannerController();
   dynamic _image;
 
   pickImage() async {
@@ -59,7 +60,9 @@ class _UploadScreenState extends State<UploadScreen> {
                   pickImage();
                 },
                 child: Text("Upload image"),
-              ),ElevatedButton(onPressed: (){}, child: Text("Save"))
+              ),ElevatedButton(onPressed: ()async{
+                await _bannerController.uploadBanner(pickedImage: _image, context: context);
+              }, child: Text("Save"))
             ],
           ),
 

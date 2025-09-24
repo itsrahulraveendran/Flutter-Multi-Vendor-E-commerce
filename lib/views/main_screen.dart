@@ -5,7 +5,7 @@ import 'package:inktee_web/views/side_bar_screen/buyer_screen.dart';
 import 'package:inktee_web/views/side_bar_screen/category_screen.dart';
 import 'package:inktee_web/views/side_bar_screen/order_screen.dart';
 import 'package:inktee_web/views/side_bar_screen/product_screen.dart';
-import 'package:inktee_web/views/side_bar_screen/upload_screen.dart';
+import 'package:inktee_web/views/side_bar_screen/upload_banner.dart';
 import 'package:inktee_web/views/side_bar_screen/vendor_screen.dart';
 
 class MainScreen extends StatefulWidget {
