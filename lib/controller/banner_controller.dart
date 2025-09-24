@@ -4,8 +4,6 @@ import 'package:cloudinary_public/cloudinary_public.dart';
 import 'package:inktee_web/global_variable.dart';
 import 'package:inktee_web/models/banner_model.dart';
 import 'package:http/http.dart' as http;
-import 'package:uuid/uuid.dart';
-
 import '../services/manage_http_response.dart';
 
 class BannerController {
